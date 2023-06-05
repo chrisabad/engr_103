@@ -290,9 +290,13 @@ def main():
 
     print("Great! Let's dive into the world of EDM.")
 
+    # Define different audio files for red and blue pill
+    if pill_choice.lower() == 'red':
+        file_path = "mixkit-infected-vibes-157_red.wav"
+    else:
+        file_path = "mixkit-infected-vibes-157_blue.wav"
 
     # Step 1: Load audio file
-    file_path = "mixkit-infected-vibes-157.wav"
     audio_data, sample_rate = load_audio(file_path)
 
     # Step 2: Detect beats in the audio data
